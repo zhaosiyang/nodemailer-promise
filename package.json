@@ -1,0 +1,24 @@
+{
+  "name": "nodemailer-promise",
+  "version": "1.0.0",
+  "description": "an easy-to-use nodemailer package in Promise way ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhaosiyang/nodemailer-promise.git"
+  },
+  "keywords": [
+    "nodemailer",
+    "email",
+    "promise"
+  ],
+  "author": "zhaosiyang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhaosiyang/nodemailer-promise/issues"
+  },
+  "homepage": "https://github.com/zhaosiyang/nodemailer-promise#readme"
+}
