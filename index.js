@@ -6,7 +6,7 @@ var nodemailer = require('nodemailer');
 var fs = require('fs');
 
 var config = function(options){
-    var transporter = nodemailer.createTransport('smtps://' + options.email + ':' + options.password + '@' + options.emailServerDomain);
+    var transporter = nodemailer.createTransport('smtps://' + options.email + ':' + options.password + '@' + options.server);
     return function(mailOptions){
         return new Promise(function(fullfill, reject){
             var newMailOptions = {};
