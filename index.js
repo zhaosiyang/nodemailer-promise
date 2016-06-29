@@ -4,6 +4,7 @@
 
 var nodemailer = require('nodemailer');
 var fs = require('fs');
+var path = require('path');
 
 var config = function(options){
     var transporter = nodemailer.createTransport('smtps://' + options.email + ':' + options.password + '@' + options.server);
@@ -34,7 +35,7 @@ var config = function(options){
                 reject(new Error('No contents in your email'));
             }
             if(mailOptions.templatePath){
-                fs.readFile(mailOptions.templatePath, 'utf-8', function (err,data) {
+                fs.readFile(path.join(module.parent.filename, '..', mailOptions.templatePath), 'utf-8', function (err,data) {
                   if (err) {
                     reject(err);
                   }
