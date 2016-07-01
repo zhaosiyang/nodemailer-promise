@@ -43,8 +43,14 @@ sendEmail(options)
 4. receivers: `type: [String]` the email address of multiple receivers
 5. text: `type: String` the plain text you will send as your email contents
 6. html: `type: String` the html string  you will send as your email contents
-7. attachments: `type: [Object]` the attachments you want to send with your email
-    Note: The object can be any one of the form, please refer (https://nodemailer.com/using-attachments/)
+7. templatePath: `type: String` the path of the html file template you want to send (useful when you want to send a large html string)
+8. attachments: `type: [Object]` the attachments you want to send with your email
+
+
+    Note: 
+    1. Either receivers or receiver field should be included.
+    2. Either text or html or templatePath should be included.
+    3. For the form of attachments, please refer to example 3 below.
 
 ## Examples (config omitted)
 #### Example1: send an email to one receiver with inline html contents
