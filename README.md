@@ -35,6 +35,8 @@ sendEmail(options)
     .catch(function(err){console.log('got error'); console.log(err)});   // if an error occurs
 ```
 
+NOTE: Using your Gmail account to send an email may not work directly, for security reasons you may need to configure something, refer (here)[https://nodemailer.com/using-gmail/]
+
 ## API
 #### Options can include the following fields
 1. subject: `type: String` the subject of your email
