@@ -7,7 +7,7 @@ Using node mailer using in Promise way
 * Easy to use
 
 ## Installation
-`npm install nodemailer_promise --save`
+`npm install nodemailer-promise --save`
 
 ## Quick Start
 #### step 1: configure your email address
