@@ -66,7 +66,7 @@ var options = {
 
 sendEmail(options)
     .then(function(info){console.log(info)})   // if successful
-    .catch(function(err){console.log('got error'); console.log(err)});   // if an error occurs
+    .catch(function(err){console.log(err)});   // if an error occurs
 ```
 #### Example2: send an email to multiple receivers with html from another file
 ```
