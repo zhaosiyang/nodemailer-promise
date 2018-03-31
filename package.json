@@ -1,6 +1,6 @@
 {
   "name": "nodemailer-promise",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "an easy-to-use nodemailer package in Promise way ",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/zhaosiyang/nodemailer-promise#readme",
   "dependencies": {
-    "nodemailer": "^2.4.2"
+    "nodemailer": "^4.0.1"
   }
 }
